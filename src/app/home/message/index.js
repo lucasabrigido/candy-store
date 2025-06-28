@@ -2,9 +2,9 @@ const Message = () => {
 
     const text = '0754a1bf-a1fe-44f8-9ac5-e69555910a7c';
 
-    const handleCopy = async () => {
+    const handleCopy = () => {
         try {
-            await navigator.clipboard.writeText(text);
+            navigator.clipboard.writeText(text).then(console.log);
         } catch (err) {
             console.error('Erro ao copiar:', err);
         }
@@ -19,9 +19,9 @@ const Message = () => {
 
             <p>
 
-                Você também pode mandar um <span className='pix'>Pix</span> se preferir. <br />
+                Você também pode mandar um <span className='pix' onClick={handleCopy}>Pix</span> se preferir. <br />
 
-                <span className='copy' onClick={handleCopy}>
+                <span className='copy'>
                     (Clique em PIX para copiar)
                 </span>
             </p>
