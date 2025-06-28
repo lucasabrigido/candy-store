@@ -39,7 +39,7 @@ body {
 
 .cup {
     position: absolute;
-    bottom: 0px;
+    bottom: 15px;
     width: 60px;
     height: 20px;
 }
