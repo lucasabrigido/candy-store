@@ -2,6 +2,9 @@ body {
     margin: 0;
     font-family: sans-serif;
     background: #f9e8e8;
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
 }
 
 .game {
@@ -9,6 +12,8 @@ body {
     background: #fff;
     overflow: hidden;
     height: 100dvh;
+    overscroll-behavior: none;
+    touch-action: none;
 }
 
 /* width: 500px; */
